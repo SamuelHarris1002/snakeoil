@@ -1,0 +1,49 @@
+body {
+  max-width: 960px;
+  min-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Spooky", serif, sans-serif;
+  outline: 1px solid red;
+  min-height: 800px;
+  max-height: 800px;
+}
+
+header {
+  position: relative;
+  font-size: 2.465em;
+  text-align: center;
+}
+
+nav#rightNav > ul {
+  -webkit-transform: rotate(90deg) translateY(-145px) translateX(50px);
+          transform: rotate(90deg) translateY(-145px) translateX(50px);
+}
+
+ul > li {
+  float: left;
+  list-style-type: none;
+  padding: 4px 4px 4px 4px;
+  outline: 1px solid red;
+}
+
+nav#rightNav {
+  position: relative;
+  float: right;
+}
+
+p {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  text-indent: 2em;
+  padding: 5px;
+}
+
+#bookImage {
+  z-index: bottom;
+  display: inline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
