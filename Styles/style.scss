@@ -1,0 +1,51 @@
+$textColor: black;
+$default: 'Spooky', serif, sans-serif;
+$rotateAndTransform: rotate(90deg) translateY(-145px) translateX(50px);
+$outLine: 1px solid red;
+
+body {
+	max-width: 960px;
+	min-width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: $default;
+	outline: $outLine;
+	min-height: 800px;
+	max-height: 800px;
+}
+
+header {
+	position: relative;
+	font-size: 2.465em;
+	text-align: center;
+}
+
+nav#rightNav > ul {
+	transform: $rotateAndTransform;
+}
+
+ul > li {
+	float: left;
+	list-style-type: none;
+	padding: 4px 4px 4px 4px;
+	outline: $outLine;
+}
+
+nav#rightNav {
+	position: relative;
+	float: right;
+}
+
+p {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	text-indent: 2em;
+	padding: 5px;
+}
+
+#bookImage {
+	z-index: bottom;
+	display: inline;
+	box-sizing: border-box;
+}
