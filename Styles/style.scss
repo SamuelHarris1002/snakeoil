@@ -1,17 +1,23 @@
 $textColor: black;
 $default: 'Spooky', serif, sans-serif;
-$rotateAndTransform: rotate(90deg) translateY(-145px) translateX(50px);
+$rotateAndTransform: rotate(90deg) translateY(-130px) translateX(50px);
 $outLine: 1px solid red;
 
+html {
+	background-image: linear-gradient(rgb(230, 230, 230), rgb(151, 151, 151), rgb(80, 80, 80));
+	height: 100%;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+
 body {
-	max-width: 960px;
+	z-index: 0;
+	max-width: 1280px;
 	min-width: 640px;
 	margin-right: auto;
 	margin-left: auto;
 	font-family: $default;
 	outline: $outLine;
-	min-height: 800px;
-	max-height: 800px;
 }
 
 header {
@@ -25,15 +31,24 @@ nav#rightNav > ul {
 }
 
 ul > li {
-	float: left;
+	float: right;
 	list-style-type: none;
-	padding: 4px 4px 4px 4px;
+	padding: 4px 40px 4px 4px;
 	outline: $outLine;
+	text-align: center;
+
+	/*Background Styles */
+	box-shadow: inset rgb(151, 151, 151) 5px 0px 10px;
+}
+nav#rightNav a {
+	text-align: center;
+	text-decoration: none;
 }
 
 nav#rightNav {
-	position: relative;
+	position: inherit;
 	float: right;
+	text-align: center;
 }
 
 p {
@@ -44,8 +59,11 @@ p {
 	padding: 5px;
 }
 
-#bookImage {
-	z-index: bottom;
-	display: inline;
+div.bottom > img {
 	box-sizing: border-box;
+	height: 20px;
+	width: 50%;
+}
+
+div#center {
 }
