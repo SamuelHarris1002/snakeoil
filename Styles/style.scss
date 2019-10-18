@@ -1,13 +1,16 @@
 $textColor: black;
 $default: 'Spooky', serif, sans-serif;
-$rotateAndTransform: rotate(90deg) translateY(-130px) translateX(50px);
+$rotateAndTransform: rotate(90deg) translateY(-375px) translateX(-300px);
 $outLine: 1px solid red;
-
+$max: 1000px;
 html {
 	background-image: linear-gradient(rgb(230, 230, 230), rgb(151, 151, 151), rgb(80, 80, 80));
-	height: 100%;
-	background-repeat: no-repeat;
-	z-index: 3;
+}
+
+html::after {
+	display: table;
+	content: "";
+	clear: both;
 }
 
 body {
@@ -17,7 +20,6 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	font-family: $default;
-	outline: $outLine;
 }
 
 header {
@@ -33,7 +35,7 @@ nav#rightNav > ul {
 ul > li {
 	float: right;
 	list-style-type: none;
-	padding: 4px 40px 4px 4px;
+	padding: 4px 4px 4px 4px;
 	outline: $outLine;
 	text-align: center;
 
@@ -42,9 +44,16 @@ ul > li {
 }
 nav#rightNav a {
 	text-align: center;
+	color: black;
 	text-decoration: none;
 }
-
+li[id^="link"] {
+	margin: 0px 30px 0px;
+	font-weight: bold;
+	font-size: 1.35em;
+	text-align: center;
+	overflow: unset;
+}
 nav#rightNav {
 	position: inherit;
 	float: right;
@@ -65,5 +74,9 @@ div.bottom > img {
 	width: 50%;
 }
 
-div#center {
+map {
+	background-color: white;
+	color: white;
+	display: block;
+	z-index: 1;
 }
