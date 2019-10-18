@@ -63,4 +63,13 @@ div.bottom > img {
   height: 20px;
   width: 50%;
 }
+blockquote{
+  font-family: fantasy, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2em;
+}
+img#dot:first-of-type{
+  position: absolute;
+  right: 50%;
+  left: 0%;
+}
 /*# sourceMappingURL=style.css.map */
