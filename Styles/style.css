@@ -68,8 +68,8 @@ blockquote{
   font-size: 2em;
 }
 img#dot:first-of-type{
-  position: absolute;
+  position: relative;
   right: 50%;
-  left: 0%;
+  left: -10%;
 }
 /*# sourceMappingURL=style.css.map */
