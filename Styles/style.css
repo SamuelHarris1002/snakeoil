@@ -1,12 +1,19 @@
+html {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), color-stop(#979797), to(#505050));
+  background-image: linear-gradient(#e6e6e6, #979797, #505050);
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
 body {
-  max-width: 960px;
+  z-index: 0;
+  max-width: 1280px;
   min-width: 640px;
   margin-right: auto;
   margin-left: auto;
   font-family: "Spooky", serif, sans-serif;
   outline: 1px solid red;
-  min-height: 800px;
-  max-height: 800px;
 }
 
 header {
@@ -16,20 +23,30 @@ header {
 }
 
 nav#rightNav > ul {
-  -webkit-transform: rotate(90deg) translateY(-145px) translateX(50px);
-          transform: rotate(90deg) translateY(-145px) translateX(50px);
+  -webkit-transform: rotate(90deg) translateY(-130px) translateX(50px);
+          transform: rotate(90deg) translateY(-130px) translateX(50px);
 }
 
 ul > li {
-  float: left;
+  float: right;
   list-style-type: none;
-  padding: 4px 4px 4px 4px;
+  padding: 4px 40px 4px 4px;
   outline: 1px solid red;
+  text-align: center;
+  /*Background Styles */
+  -webkit-box-shadow: inset #979797 5px 0px 10px;
+          box-shadow: inset #979797 5px 0px 10px;
+}
+
+nav#rightNav a {
+  text-align: center;
+  text-decoration: none;
 }
 
 nav#rightNav {
-  position: relative;
+  position: inherit;
   float: right;
+  text-align: center;
 }
 
 p {
@@ -40,10 +57,10 @@ p {
   padding: 5px;
 }
 
-#bookImage {
-  z-index: bottom;
-  display: inline;
+div.bottom > img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 20px;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
