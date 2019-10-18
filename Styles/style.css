@@ -1,9 +1,12 @@
 html {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), color-stop(#979797), to(#505050));
   background-image: linear-gradient(#e6e6e6, #979797, #505050);
-  height: 100%;
-  background-repeat: no-repeat;
-  z-index: 3;
+}
+
+html::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 body {
@@ -13,7 +16,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   font-family: "Spooky", serif, sans-serif;
-  outline: 1px solid red;
 }
 
 header {
@@ -23,14 +25,14 @@ header {
 }
 
 nav#rightNav > ul {
-  -webkit-transform: rotate(90deg) translateY(-130px) translateX(50px);
-          transform: rotate(90deg) translateY(-130px) translateX(50px);
+  -webkit-transform: rotate(90deg) translateY(-375px) translateX(-300px);
+          transform: rotate(90deg) translateY(-375px) translateX(-300px);
 }
 
 ul > li {
   float: right;
   list-style-type: none;
-  padding: 4px 40px 4px 4px;
+  padding: 4px 4px 4px 4px;
   outline: 1px solid red;
   text-align: center;
   /*Background Styles */
@@ -40,7 +42,16 @@ ul > li {
 
 nav#rightNav a {
   text-align: center;
+  color: black;
   text-decoration: none;
+}
+
+li[id^="link"] {
+  margin: 0px 30px 0px;
+  font-weight: bold;
+  font-size: 1.35em;
+  text-align: center;
+  overflow: unset;
 }
 
 nav#rightNav {

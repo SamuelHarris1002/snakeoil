@@ -2,13 +2,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Styles/tables.css" />
+  <link rel="stylesheet" href="/Styles/style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Remedy 1</title>
 </head>
 <body>
-  <div class=""></div>
-  <header>
+  <table>
+    <tbody>
+      <tr id="headerRow">
+        <th>$category</th>
+      </tr>
+      <tr> 
+        <td id="imageCell" rowspan="2" colspan="2">$TheImageWithIDtableImage</td>
+        <td rowspan="2">$itemPrice</td>
+      </tr>
+      <tr id="priceRow">
+      </tr>
+      <tr id="itemDescRow">
+        <td id="itemCell" >$item</td>
+        <td id="descCell" colspan="2">$itemDescription</td>
+      </tr>
+    </tbody>
+  </table>
 
-  </header>
+  <aside>
+    <blockquote>$quoteNumber1</blockquote>
+    <blockquote>$quoteNumber2</blockquote>
+    <blockquote>$quoteNumber3</blockquote>
+  </aside>
 </body>
 </html>
