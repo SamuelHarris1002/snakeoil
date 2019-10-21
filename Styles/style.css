@@ -77,6 +77,10 @@ div.bottom > img {
 blockquote{
   font-family: fantasy, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2em;
+  border: 5px double black;
+  border-radius: 25px;
+  box-shadow: inset black 5px 5px 15px,
+  black 5px 5px 15px;
 }
 img#dot:first-of-type{
   position: relative;
