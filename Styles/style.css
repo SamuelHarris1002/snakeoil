@@ -1,6 +1,7 @@
 html {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), color-stop(#979797), to(#505050));
-  background-image: linear-gradient(#e6e6e6, #979797, #505050);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), color-stop(#979797), to (#505050));
+  background-image: linear-gradient(#e6e6e6, #979797, #505050) ;
+  z-index: 2;
 }
 
 html::after {
