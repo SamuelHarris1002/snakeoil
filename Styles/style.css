@@ -26,8 +26,8 @@ header {
 }
 
 nav#rightNav > ul {
-  -webkit-transform: rotate(90deg) translateY(-375px) translateX(-300px);
-          transform: rotate(90deg) translateY(-375px) translateX(-300px);
+  -webkit-transform: rotate(90deg) translateY(-575px) translateX(-300px);
+          transform: rotate(90deg) translateY(-575px) translateX(-300px);
 }
 
 ul > li {
@@ -43,12 +43,11 @@ ul > li {
 
 nav#rightNav a {
   text-align: center;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 li[id^="link"] {
-  margin: 0px 30px 0px;
   font-weight: bold;
   font-size: 1.35em;
   text-align: center;
@@ -56,9 +55,54 @@ li[id^="link"] {
 }
 
 nav#rightNav {
-  position: inherit;
+  position: absolute;
   float: right;
   text-align: center;
+}
+
+li#link1 {
+  outline: 2px solid rgba(0, 0, 0, 0.01);
+  -webkit-box-shadow: inset rgba(255, 0, 0, 0.01) 2px 2px 10px;
+          box-shadow: inset rgba(255, 0, 0, 0.01) 2px 2px 10px;
+  color: rgba(0, 0, 0, 0.01);
+  position: absolute;
+  -webkit-transform: translateX(170px) translateY(10px);
+          transform: translateX(170px) translateY(10px);
+  font-size: 2em;
+}
+
+li#link1 > a {
+  color: rgba(0, 0, 0, 0.01);
+}
+
+li#link2 {
+  position: absolute;
+  -webkit-transform: translateX(-14px) translateY(10px);
+          transform: translateX(-14px) translateY(10px);
+  padding: 0px;
+  outline: 2px solid rgba(0, 0, 0, 0.01);
+  -webkit-box-shadow: inset rgba(255, 0, 0, 0.01) 2px 2px 10px;
+          box-shadow: inset rgba(255, 0, 0, 0.01) 2px 2px 10px;
+}
+
+li#link2 > a {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.01);
+}
+
+li#link3 {
+  position: absolute;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  outline: 2px solid rgba(0, 0, 0, 0.01);
+  -webkit-box-shadow: inset rgba(255, 0, 0, 0.01) 2px 2px 10px;
+          box-shadow: inset rgba(255, 0, 0, 0.01) 2px 2px 10px;
+  color: rgba(0, 0, 0, 0.01);
+}
+
+li#link3 > a {
+  font-size: 1.8em;
+  color: rgba(0, 0, 0, 0.01);
 }
 
 p {
