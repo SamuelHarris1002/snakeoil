@@ -132,4 +132,7 @@ img#dot:first-of-type{
   right: 50%;
   left: -10%;
 }
+a{
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */

@@ -40,6 +40,7 @@ table td {
 td#itemCell {
   color: red;
   width: 20%;
+  padding-left: 40px;
 }
 
 td#descCell {
@@ -53,7 +54,7 @@ aside {
 aside > blockquote {
   height: 33%;
   width: 250px;
-  font-size: 75%;
+  font-size: 100%;
   text-align: center;
   margin: 0px 0px 0px 0px;
 }
