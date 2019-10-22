@@ -1,15 +1,12 @@
+html {
+  overflow: hidden;
+}
 
 body {
   display: default;
   outline: px solid white;
 }
-td#imageCell > img#tableImage {
-  position: relative;
-  transform: translateX(3%);
-  overflow: hidden;
-  height: 600px;
-  width: 800px;
-}
+
 table {
   width: 960px;
   height: 100%;
@@ -59,13 +56,9 @@ aside > blockquote {
   margin: 0px 0px 0px 0px;
 }
 
-.dead{
-  font-size: 50px;
-}
-td{
-  font-size: 20px;
-}
-#headerRow{
-  text-indent: 175%;
+#tableimage {
+  size: fill;
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=tables.css.map */

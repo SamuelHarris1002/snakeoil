@@ -1,17 +1,14 @@
+@font-face {
+  font-family: 'Spooky';
+  src: url(/Styles/Fonts/Spooky.otf) format(OpenType),
+  url(/Styles/Fonts/Spooky.ttf) format(TrueType);
+}
 html::after {
     display: table;
     content: "";
     clear: both;
   }
   
-  body {
-    z-index: 0;
-    max-width: 1280px;
-    min-width: 640px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: "Spooky", serif, sans-serif;
-  }
   
   header {
     position: relative;
@@ -40,13 +37,7 @@ html::after {
     color: white;
     text-decoration: none;
   }
-  
-  li[id^="link"] {
-    font-weight: bold;
-    font-size: 1.35em;
-    text-align: center;
-    overflow: unset;
-  }
+
   
   nav#rightNav {
     position: absolute;
